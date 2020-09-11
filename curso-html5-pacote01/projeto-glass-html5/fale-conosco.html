@@ -5,9 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tudo sobre google glass</title>
     <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+    <link rel="stylesheet" href="_css/form.css">
     
 </head>
 <script src="_javascript/funcoes.js"></script>
+<script>
+    function cal_total(){
+        var qtd = parseInt(document.getElementById("cQtd").value);
+        tot = qtd * 1500
+        document.getElementById("cTot").value = tot
+    }
+</script>
 <body>    
 <div id="interface">
     <header id="cabecalho">
@@ -15,7 +23,7 @@
     <h1>Google Glass </h1>
     <h2>A revolução do Google está chegando</h2>
     </hgroup>
-    <img id="icone" src="_imagens/glass-oculos-preto-peq.png" alt="imagem do oculos ">
+    <img id="icone" src="_imagens/contato.png" alt="imagem do oculos ">
 <nav id="menu">
 
     <h1>Menu Principal</h1>
@@ -30,38 +38,72 @@
 </nav>
     </header>
 
-Fale Conosco > Contato
-Formulário de Contato
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
-
-Identificação do Usuário
-    Nome:
-    Senha:
-    E-mail:
-    Sexo:
-        - Masculino
-        - Feminino
-    Data de Nascimento:
-
-Endereço do Usuário
-    Logradouro:
-    Número:
-    Estado:
-    Cidade:
-
-Mensagem do Usuário
-    Grau de Urgência:
-    Mensagem:
-
-Quero um Google Glass
-    Gostaria de adquirir um Google Glass quando disponível
-    Cor:
-    Quantidade:
-    Preço Total: R$
+<section id="corpo-full">
+    <article id="noticia-principal">
+        <header id="cabecalho-artigo">
+            <hgroup>
+                <h3>Fale Conosco > Contatos</h3>
+                <h1>Formulário de contato</h1>
+                <h2>por Rafael Damasceno</h2>
+                <h3 class="direita">Atualizado em 01/Ago/2020</h3>
+            </hgroup>
+        </header>
 
 
-[BOTÃO ENVIAR]
+        <form method="POST" id="fContato" action="mailtop:rafaeldamasceno2000@gmail.com" oninput="cal_total()">
+        <fieldset id="usuario"><legend>Identificação do Usuário</legend>
+            <p> <label for="cNome">Nome:</label> <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome completo"> </p>
+            <p><label for="cSenha">Senha:</label><input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 digitos"> </p>
+            <p><label for="cMail">E-mail:</label> <input type="email" name="tMail" id="cMail" size="20" maxlength="40" placeholder="insira o email"> </p>
+            <fieldset id="sexo"><legend>Sexo</legend>
+                <input type="radio" name="tSexo" id="cMasc"> <label for="cMasc">Masculino</label><br>
+                <input type="radio" name="tSexo" id="cFem" checked> <label for="cFem">Feminino</label></fieldset>
+            <p>Data de Nascimento: <input type="date" name="tNasc" id="cNasc"> </p>
+        </fieldset>
+
+        <fieldset id="endereco"><legend>Endereço do Usuário</legend>
+            <p>Logradouro: <input type="text" name="tRua" id="cRua" size="40" maxlength="80" placeholder="Endereco"> </p>
+            <p>Número: <input type="number" name="tNum" id="cNum" min="0" max="99999" > </p>
+            <p><label for="cEst"> Estado:</label><select name="tEst" id="cEst">
+                <optgroup label="Regiao sudeste">
+                    <option value="MG">Minas Gerais </option>
+                    <option value="RJ">Rio De janeiro</option>
+                    <option value="SP">Sao Paulo</option>
+                </optgroup>
+                <optgroup label="Regiao Sul">
+                    <option value="RS"> rio grande do sul</option>
+                    <option value="PR">Parana</option>
+                    <option value="SC">Snata Catarina</option>
+                </optgroup>
+
+            </select></p>
+            <p><label for="cCid">Cidade:</label> <input type="text" name="tCid" id="cCid" maxlength="40" size="20" placeholder="sua cidade" list="cidades"> </p>
+            <datalist id="cidades">
+                <option value="barbacena"></option>
+                <option value="capela nova"></option>
+                <option value="ouro preto"></option>
+                <option value="lafaiete"></option>
+            </datalist>
+        </fieldset>
+
+        <fieldset id="mensagem"><legend>Mensagem do Usuário</legend>
+            <p><label for="cUrg">Grau de Urgência:</label> <input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2"> </p>
+            <p><label for="cMsg">Mensagem:</label> <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="digite sua mensagem"></textarea> </p>
+        </fieldset>
+
+        <fieldset id="pedido"><legend>Quero um Google Glass</legend>
+            <p> <input type="checkbox" name="tPed" id="cPed"><label for="cPed"> Gostaria de adquirir um Google Glass quando disponível</label></p>
+            <p><label for="cCor">Cor:</label> <input type="color" name="tCor" id="cCor"></p>
+            <p><label for="cQtd">Quantidade:</label><input type="number" name="tQtd" id="cQtd" min="0" max="5"></p>
+            <p><label for="cTot">Preço Total: R$</label> <input type="text" name="tTot" id="cTot" placeholder="total a pagar" readonly> </p>
+        </fieldset>
+        
+
+        <input type="image" name="tEnviar" src="_imagens/botao-enviar.png">
+        </form>
+    </article>
+</section>
+
 
 <footer id="rodape">
     <p>Copyright &copy; 2020 - by Rafael Damasceno <br/>
