@@ -5,17 +5,89 @@
         <title>Menu</title>
         
         <style>
+            body{
+                background-color: rgb(199, 181, 185);
+
+            }
+            main{
+                width: 955px;
+                margin: -1px auto 10px;
+                border: 1px solid rgb(97, 87, 87)  ;
+                box-shadow: 1px 10px 20px rgb(255, 241, 241);
+                background-color: rgb(253, 251, 255);
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            header{
+                width: 955px;
+                height: 95px;
+                
+            }
+
+            nav{
+                width: 955px;
+                background-color: rgb(116, 88, 46);
+            
+            }
+
+            nav ul{
+                list-style: none;
+                margin: 0px;
+                padding: 4px;
+            }
+
+            nav ul li{
+                display: inline-block;
+                
+
+            }
+
+            nav ul li a{
+                font-size: 20px;
+                text-decoration: none;
+                color: azure;
+                padding: 4px 20px;
+
+
+            }
+
+            nav ul li a:hover{
+                background-color: aliceblue;
+                color: rgb(116, 88, 46)
+            }
+
+            article{
+                float: left;
+                margin: 20px 30px;
+                width: 600px;
+            }
+
+            #menu{
+                margin: 0px;
+            }
+
+            #apoio{
+                float: right;
+                width: 300px;
+                margin-top: -1500px;
+            }
+
+            p{ font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:0.9em; color:#555; line-height:1.8 }
+            h1, h2, h4 { font-family:Georgia, "Times New Roman", Times, serif; color:#C63; font-style:italic; letter-spacing:-0.05em }
+
+            footer { clear:both; width:700px; margin:0 auto; font-size:0.75em; text-align:center; background-color:#ECECEC; padding:5px }
+
+
             
         </style> 
 	</head>
 
     <body>
         <main>
-            <!-- adicionar header -->
+            <header>
                 <img src="../imagens/topo_principal.jpg">
-            <!-- finalizar header -->
+            </header>
 
-            <!-- adicionar nav -->
+            <nav>
                 <ul>
                   <li><a href="home.html">Home</a></li>
                   <li><a href="info.html">Info</a></li>
@@ -25,12 +97,12 @@
                   <li><a href="menu.html">Menu</a></li>
                   <li><a href="review.html">Review</a></li>
                 </ul>
-            <!-- finalizar nav -->
+            </nav>
 
-            <!-- adicionar article -->
-                <!-- adicionar header -->
-                    <h1>Menu</h1>
-                <!-- finalizar header -->
+            <article>
+                <header>
+                    <h1 id="menu">Menu</h1>
+                </header>
                 
                 <h4>Appetizers</h4>
                 <p><img src="../imagens/appetizer.jpg" width="475" height="102" alt=""/></p>
@@ -68,9 +140,9 @@
                   <li>Alaskan Halibut with a Rich Loire Valley Beurre Blanc Sauce - served with mashed purple Peruvian potatoes and haricot verts.</li>
                   <li>Recommended pairing: '98 Passi Emilio Vineyards Sauvignon Blanc </li>
                 </ul>
-            <!-- finalizar article -->
+            </article>
 
-            <!-- adicionar div de apoio -->
+            <div id="apoio">
                 <section class="fotos_apoio">
                     <h2>Mapa</h2>
                     <img src="../imagens/mapa_como_chegar.gif" width="275" height="299" />
@@ -85,12 +157,12 @@
                     <h2>Vinhos</h2>
                     <img src="../imagens/vinhos.jpg" width="275" height="203" />    
                 </section>
-            <!-- finalizar div de apoio -->
+            </div>
 
-            <!-- adicionar rodape -->
+            <footer>
                 <p>Cafe Fontenebleu - Rua Ernesto de Paula Santos, 187 Sala 506 - Recife-PE</p>
-                <p><small>&copy Copyright 2015 - iMedia Brasil todos os direitos reservados.</small></p>
-            <!-- finalizar rodape -->
+                <p><small>&copy Copyright 2020 - Rafael Damasceno.</small></p>
+            </footer>
         </main>
 		
     </body>
