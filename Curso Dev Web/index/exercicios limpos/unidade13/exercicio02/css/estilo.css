@@ -1,18 +1,19 @@
 /* CSS Document */
 
 html {
-	background-color:#F4F4F4;
+	background-color:#685151;
 	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
 	font-size:12px;
 }
 
 body {
 	width:560px;
+	height: 500px;
 	border:1px solid #ddd;
 	margin:10px auto;
 	background-color:#FFF;
 	padding:10px 30px;
-	border-radius:5px;
+	border-radius:5	px;
 }
 
 h2 {
@@ -39,7 +40,7 @@ input:focus {
 }
 
 input[type=submit] {
-	width:100px;
+	width:200px;
 	color:#FFF;
 	background:linear-gradient(top, #F33, #933 );
 	background:-webkit-linear-gradient(top, #F33, #933 );

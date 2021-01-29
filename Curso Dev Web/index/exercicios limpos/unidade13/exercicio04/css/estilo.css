@@ -1,8 +1,5 @@
-@charset "ISO-8859-2";
-/* CSS Document */
-
 html {
-	background-color:#F4F4F4;
+	background-color:#4f3737;
 	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
 	font-size:12px;
 }
@@ -29,21 +26,23 @@ h2 {
 input {
 	display:block;
 	margin-bottom:20px;
-	border:1px solid #999;
+	border:1px solid rgb(160, 66, 66);
 	padding:8px;
 	border-radius:3px;
 }
 
 input:focus {
-	border:1px solid #ccc;
+	border:1px solid rgb(134, 18, 201);
 	outline:none;
 }
 
 input[type=submit] {
 	width:100px;
-	color:#FFF;
+	color:rgb(19, 19, 19);
 	background:linear-gradient(top, #F33, #933 );
-	border:1px solid #333;
+	background:-webkit-linear-gradient(top, #F33, #933 );
+	background:-moz-linear-gradient(top, #F33, #933 );
+	border:1px solid rgb(184, 53, 53);
 	cursor:pointer;
 }
 

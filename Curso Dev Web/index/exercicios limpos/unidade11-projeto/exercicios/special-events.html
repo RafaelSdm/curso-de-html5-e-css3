@@ -9,11 +9,14 @@
             main { width:955px; margin:-1px auto 10px; border:1px solid #ddd; background-color:#FFF; font-family:Arial, Helvetica, sans-serif }
             header { width:955px; height:95px }
             
-            nav { width: 955px; background-color: #5D240A }
+            nav { width: 955px; background-color: #5D240A; height: -5px; }
             nav ul { list-style:none; margin:0; padding:4px }
             nav ul li { display:inline-block }
-            nav ul li a { font-size: 0.85em; text-decoration: none; color: #FFF; padding: 4px 20px }
-            nav ul li a:hover { background-color: #B4531A }
+            nav ul li a { font-size: 0.85em; text-decoration: none; color: #FFF; padding: 10px 20px }
+            nav ul li a:hover { 
+                background-color: #B4531A ;
+                
+            }
             
             article { float:left; margin:30px 20px; width:600px }
             
@@ -55,11 +58,11 @@
 
     <body>
         <main>
-            <!-- adicionar header -->
+            <header>
                 <img src="../imagens/topo_principal.jpg">
-            <!-- finalizar header -->
+            </header>
             
-            <!-- adicionar nav -->
+            <nav>
                 <ul>
                   <li><a href="home.html">Home</a></li>
                   <li><a href="info.html">Info</a></li>
@@ -69,12 +72,12 @@
                   <li><a href="menu.html">Menu</a></li>
                   <li><a href="review.html">Review</a></li>
                 </ul>
-            <!-- finalizar nav -->
+            </nav>
     
-            <!-- adicionar article -->
-                <!-- adicionar header -->
+            <article>
+                <header>
                     <h1>Special Events</h1>
-                <!-- finalizar header -->
+                </header>
                 
                 <h2>Our Invitation to You </h2>
                 <p>We want to share the elegant private dining room at the <b>Cafe Fontenebleau</b> flagship restaurant with you! Set in a unique, historic building in <i>Paris</i>, our private dining room is available to host your corporate events, parties, weddings, and more. </p>
@@ -104,9 +107,9 @@
                 </ul>
                 <hr width="50%" size="1" color="#E10B0F" />
                 <p>Cafe Fontenebleu <sup>&reg;</sup></p>
-            <!-- finalizar article -->
+            </article>
 
-            <!-- adicionar div de apoio -->
+            <div id="apoio">
                 <section>
                     <h2>Mapa</h2>
                     <img src="../imagens/mapa_como_chegar.gif">
@@ -121,12 +124,12 @@
                     <h2>Vinho</h2>
                     <img src="../imagens/vinhos.jpg" width="275" height="163" alt=""/> 
                 </section>
-            <!-- finalizar div de apoio -->
+            </div>
 
-            <!-- adicionar rodape -->
+            <footer>
                 <p>Cafe Fontenebleu - Rua Ernesto de Paula Santos, 187 Sala 506 - Recife-PE</p>
                 <p><small>&copy Copyright 2015 - iMedia Brasil todos os direitos reservados.</small></p>
-            <!-- finalizar rodape -->
+            </footer>
             
 		  </main>
     </body>

@@ -39,7 +39,7 @@ input:focus {
 input[type=submit] {
 	width:100px;
 	color:#FFF;
-	background:linear-gradient(top, #F33, #933 );
+	background-color: #C63;
 	border:1px solid #333;
 	cursor:pointer;
 }

@@ -14,16 +14,16 @@
 			width:700px;
 			margin:0 auto;
 			border-spacing:0;
-			border-right:1px solid #ccc;
-			border-bottom:1px solid #ccc;
+			border-right:1px solid rgb(175, 36, 36);
+			border-bottom:1px solid rgb(143, 15, 15);
 		}
 		
 		caption {
 			font-size:130%;
 			font-weight:bold;
 			padding:5px 0;
-			background-color:#ECECEC;
-			border:1px solid #ccc;
+			background-color:#826969;
+			border:1px solid rgb(253, 253, 253);
 			border-bottom:none;
 		}
 		
@@ -55,6 +55,14 @@
 			font-size:.9em;
 			color:#666;
 		}
+
+		tbody tr:nth-child(even){
+			background-color: rgb(49, 109, 172);
+		}
+
+		tbody tr:nth-child(odd){
+			background-color: coral;
+		}
 	
 	
 	</style>
@@ -62,8 +70,73 @@
     <body>
 		
         <table>
-        
 
+			<caption>Olimpiadas</caption>
+        
+			<thead>
+				<tr>
+					<td></td>
+					<td>Ouro</td>
+					<td>Prata</td>
+					<td>Bronze</td>
+					<td>Total</td>
+				</tr>
+
+			</thead>
+
+			<tfoot>
+				<tr>
+					<td></td>
+					<td>Ouro</td>
+					<td>Prata</td>
+					<td>Bornze</td>
+					<td>Total</td>
+				</tr>
+
+			</tfoot>
+
+			<tbody>
+				<tr>
+					<td>Brasil</td>
+					<td>100</td>
+					<td>130</td>
+					<td>200</td>
+					<td>430</td>
+				</tr>
+
+				<tr>
+					<td>USA</td>
+					<td>90</td>
+					<td>110</td>
+					<td>210</td>
+					<td>420</td>
+				</tr>
+
+				<tr>
+					<td>China</td>
+					<td>89</td>
+					<td>100</td>
+					<td>100</td>
+					<td>289</td>
+				</tr>
+
+				<tr>
+					<td>França</td>
+					<td>80</td>
+					<td>100</td>
+					<td>100</td>
+					<td>280</td>
+				</tr>
+
+				<tr>
+					<td>Inglaterra</td>
+					<td>8</td>
+					<td>10</td>
+					<td>10</td>
+					<td>28</td>
+				</tr>
+
+			</tbody>
         
         </table>
 
