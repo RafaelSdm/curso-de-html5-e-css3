@@ -45,12 +45,13 @@
                 background-color:rgb(153,204,51);
                 position:absolute;
                 top:100px;left:40px;
+                clip: rect(0 170px 170px 0);
             }
 
             .janela2 {
                 background-color:rgb(255,204,51);
                 position:absolute;
-                top:150px;left:75px;
+                top:50px;left:15px;
             }
 
         </style>
@@ -63,8 +64,11 @@
             <p>Each property serves a specific purpose. Understanding that purpose is the key to mastering CSS-based layouts.</p>
 
             <div id="principal">
-                <section class="janela1">Verde</section>
-                <section class="janela2">Amarelo</section>    
+                <section class="janela1">
+                    Verde
+                    <section class="janela2">Amarelo</section>    
+                </section>
+                
             </div>
         </main>
 

@@ -15,39 +15,64 @@
             }
 
             #menu ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
 
             }
 
             #menu ul li {
 
+                float: left;
+                position: relative;
+
             }
 
             /* Menu horizontal principal */
             #menu ul li a {
+                display: inline-block;
+                text-decoration: none;
+                color: rgb(18, 48, 167);
+                background-color: antiquewhite;
+                padding: 5px 10px;
+                border: 1px solid black;
+                margin-right: -5px;
 
             }
 
             /* Submenu */
             #menu ul li ul {
+                display: none;
+                position: absolute;
+                padding-top: 5px;
+
 
             }
 
             /* Itens do submenu */
             #menu ul li ul li a {
+                width: 110px;
+                margin-top: -1px;
 
             }
 
             #menu ul li ul li a:hover  {
+                background-color: crimson;
+                color: antiquewhite;
 
             }
 
             /* PULO DO GATO!!  Faz aparecer o menu */
             #menu li:hover ul {
+                display: block;
+
 
             }
 
             /* Alterar a cor de background dos itens do menu */
             #menu ul li a:hover {
+                background-color: darkmagenta;
+                color: chartreuse;
 
             }
 
