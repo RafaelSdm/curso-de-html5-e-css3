@@ -2,11 +2,11 @@
     <head>
         <title>Aulas de Javascript</title>
         <script>
-            function calcularDiaria() {
-                return (2000/30).toFixed(2);    
+            function calcularDiaria(salario, dias) {
+                return (salario/dias).toFixed(2);    
             }
             
-            var diaria = calcularDiaria();
+            var diaria = calcularDiaria(3000,30);
             alert(diaria);
         </script>
     </head>

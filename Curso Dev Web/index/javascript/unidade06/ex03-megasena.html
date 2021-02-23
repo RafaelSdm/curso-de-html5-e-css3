@@ -3,6 +3,31 @@
         <title>Aulas de Javascript</title>
         <script>
 
+            var sorteio
+            var mega = new Array();
+            var i = 1
+            
+            while(i <=6){
+                sorteio = Math.ceil(Math.random()*60); 
+                numero = Number(sorteio)
+
+                if(mega.indexOf(numero)== -1){
+                    mega.push(numero)
+                    i = i+1
+                }
+            }
+
+            function ordenar(a,b){
+                return a-b
+            }
+
+           
+
+
+            mega.sort(ordenar)
+
+            console.log(mega)
+
         </script>
     </head>
     <body>

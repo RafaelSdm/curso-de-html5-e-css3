@@ -3,6 +3,22 @@
         <title>Aulas de Javascript</title>
         <script>
 
+            var produto = new Object();
+            produto.nome = 'Caneta'
+            produto.preco = 2.99;
+            produto.cor = 'azul'
+
+            console.log(produto.nome)
+            console.log(produto.cor)
+
+            function retornaInfo(){
+                return "Meu produto " + this.nome + ", Custa: " + this.preco
+            }
+
+            produto.info = retornaInfo
+
+            window.alert(produto.info())
+
         </script>
     </head>
     <body>
