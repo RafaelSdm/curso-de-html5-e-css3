@@ -4,12 +4,23 @@
         <meta charset="UTF-8">
         <title>Curso jQuery Fundamental</title>
         <style>
-			#janela { width:200px; height:200px; background-color:#069; border:5px solid #000 }
+			#janela { 
+                width:200px; 
+                height:200px; 
+                background-color:#069; 
+                border:5px solid #000 
+            }
 		</style>
         
-        <script src="jquery-3.2.1.min.js"></script>
-        <script>
+        <script src="jquery1.js"></script>
+        <script>    
 			jQuery(document).ready(function() {
+                console.log("A altura da minha janela é de " + $(window).height())
+                console.log("A largura do quadrado é de: " + $(window).width())
+
+
+                console.log("o tamanho da largura do documento é de " + $(document).width())
+                console.log("o tamaho da altura do dumeto é de " + $(document).height())
 						
 			});
 		</script>        

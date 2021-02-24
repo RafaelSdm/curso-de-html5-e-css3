@@ -6,14 +6,19 @@
         
         <style>
 			body 	{ font-family:Arial, Helvetica, sans-serif; font-size:0.8em; }
-			ul 		{ margin:0; padding:0; list-style:none; width:200px }
+			ul 		{ margin:0; padding:0; list-style:none; width:200px; }
 			li		{ margin-bottom:5px }
 			li a	{ padding:10px 6px; color:#39C; text-decoration:none } 
         </style>
 
-		<script src="jquery-3.2.1.min.js"></script>
+		<script src="jquery1.js"></script>
         <script>
 			$( function(e) {
+
+                $("li a[href$='.zip']").after("zip")
+                $("li a[href$='.pdf']").after("pdf")
+                $("li a[href$='.zip']").before("<img src= imagens/icon_zip.gif>")
+                $("li a[href$='.pdf']").before("<img src= imagens/icon_pdf.gif>")
 	
             });
 		</script>

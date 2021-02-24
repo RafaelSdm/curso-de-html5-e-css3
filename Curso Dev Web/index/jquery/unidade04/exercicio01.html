@@ -9,9 +9,14 @@
 			li		{ display:inline-block; margin-right:10px }
 		</style>
         
-        <script src="jquery-3.2.1.min.js"></script>
+        <script src="jquery1.js"></script>
         <script>
 			$( function(e) {
+
+                $("<li><img src='imagem/foto4.jpg'></li>").insertAfter("li:last-child")
+                $("<li><img src='imagem/foto5.jpg'></li>").insertBefore("li:first-child")
+                $("<li><img src='imagem/foto6.jpg'></li>").insertAfter("li:nth(2)")
+
 
 			} )
 		

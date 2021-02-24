@@ -12,11 +12,23 @@
             <a href="#">Uruguai</a>
             <a href="#">Chile</a>
         </nav>
+
+        <a href="#">Colombia</a>
         
 		<!-- scripts -->
-        <script src="jquery-3.2.1.min.js"></script>
+        <script src="jquery1.js"></script>
         <script>    
+            window.alert("Esta pagina contem " + $("nav a").length + " links")
+
         	$( function() {
+                $("a").css("color", "yellow") 
+                $("nav a").css("color", "red")
+                $("a").css("text-decoration","none")
+                $("a").css("display","block")
+                $("a:first").css("color","black")
+                  
+
+                
 				
 			})
         </script>   

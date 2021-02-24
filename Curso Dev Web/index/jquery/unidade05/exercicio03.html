@@ -18,20 +18,89 @@
 			
 			nav ul { margin:0; padding:0; list-style:none }
 			nav li { 
-				list-style-type:none; width:78px; height:78px;
-			 	background-repeat:no-repeat; margin-bottom:1px;
+				list-style-type:none;
+				 width:78px; 
+				 height:78px;
+			 	background-repeat:no-repeat; 
+				 margin-bottom:1px;
 				cursor:pointer;
 			}
 			
-			nav li:first-child 	{ background-image:url(imagem/futebol.png) } 
-			nav li:nth-child(2) { background-image:url(imagem/basquete.png) }
+			nav li:first-child 	{ 
+				background-image:url(imagem/futebol.png)
+			 } 
+			nav li:nth-child(2) { 
+				background-image:url(imagem/basquete.png)
+				}
+
+			nav li:nth-child(3){
+				background-image: url(imagem/tenis.png);
+			}
+
+			#primeira{
+				width: 100%;
+				height: 800px;
+				background-color: rgba(27, 194, 41, 0.679);
+
+			}
+
+			#segunda{
+				width: 100%;
+				height: 800px;
+				background-color: coral;
+			}
+
+			#terceira{
+				width: 100%;
+				height:800px;
+				background-color: darkorange;
+
+			}
 					
         </style>
          
-        <script src="jquery-3.2.1.min.js"></script>
+        <script src="jquery1.js"></script>
         <script>		
 			$( function(e) { 	
 
+				function redimensionar(){
+
+					var alturjanela  = $(window).height();
+
+					$('#primeira').css('heigth',alturjanela)
+					$('#segunda').css('heigth',alturjanela)
+					$('#terceira').css('heigth',alturjanela)
+				}
+
+				$('nav li:nth-child(2)').click(function(e){
+					console.log( $('#segunda').offset().top);
+
+					$('html,body').animate( {scrollTop:$('#segunda').offset().top},1000 )
+
+					
+
+
+				});
+
+				$('nav li:first-child').click(function(e){
+					console.log($('#primeira').offset().top);
+
+					$('html,body').animate({scrollTop:$('#primeira').offset().top},1000)
+
+				});
+
+				$('nav li:nth-child(3)').click(function(e) {
+					console.log($('#terceira').offset().top)
+
+					$('html,body').animate({scrollTop:$('#terceira').offset().top},1000)
+					
+				});
+
+				$(window).resize(function(e){
+					redimensionar();
+				})
+
+				redimensionar();
 			});			
 		</script>   
     </head>
@@ -40,7 +109,21 @@
         	<ul>
             	<li id="tela1"></li>
             	<li id="tela2"></li>
+				<li id="tela3"></li>
             </ul>
         </nav>
+
+		<div id="primeira">
+
+		</div>
+
+		<div id="segunda">
+
+		</div>
+
+		<div id="terceira">
+
+		</div>
+
     </body>
 </html>

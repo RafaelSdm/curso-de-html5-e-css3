@@ -11,9 +11,13 @@
 			.verde { color:#096 }
 		</style>
 
-		<script src="jquery-3.2.1.min.js"></script>
+		<script src="jquery1.js"></script>
         <script>
 			$( function(e) {
+
+                $("li").css("background-color","pink")
+                $("li[class='verde']").css("color","blue")
+                $("li[id='texto2']").css("background-color",'blue')
 				
             });
 		</script>
