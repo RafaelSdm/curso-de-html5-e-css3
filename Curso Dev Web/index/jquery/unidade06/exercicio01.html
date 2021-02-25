@@ -4,8 +4,98 @@
         <meta charset="UTF-8">
         <title>Curso jQuery Fundamental</title>
         
-        <script src="jquery-3.2.1.min.js"></script>
+        <script src="jquery1.js"></script>
         <script>
+
+            $(function(){
+                $('#cursohtml').click(function(){
+                    window.alert('Voce clicou na botao de html')
+                })
+
+                $('#cursocss').click(function(){
+                    window.alert('Voce acabou de clicar no botao css3')
+                })
+
+                $('.cursophp').on("mouseover",function(){
+                    window.alert('Voce passou o mouse no curso de php')
+                })
+
+                function mostrarMensagem(){
+                    window.alert('CLICOU NO BOTÃO JS')
+                    $('#cursojs').off('click',mostrarMensagem)
+                }
+
+                $('#cursojs').on('click',mostrarMensagem)
+
+                function mostrarMensagem2(){
+                    $('#cursopy').css('color','blue')
+                    window.alert("Voce passou pelo curso de python")
+                    $('#cursopy').off('mouseover',mostrarMensagem2)
+                }
+
+                $('#cursopy').on('mouseover',mostrarMensagem2)
+                $('#cursopy').on('click',function(){
+                    window.alert('Voce clicou no curso de python')
+                })
+            })
+
+
+            $(function(){
+
+
+                function mostrarCor(){
+                    $('#azul').css('color','red')
+                    $('#azul').css('background-color','blue')
+                    $('#azul').on('mouseout',function(){
+                        $('#azul').css('color','black')
+                        $('#azul').css('background-color','orange')
+                    })
+                }
+
+                function mostrarCor1(){
+                    $('#red').css('color','blue')
+                    $('#red').css('background-color','red')
+                    $('#red').on('mouseout',function(){
+                        $('#red').css('color','white')
+                        $('#red').css('background-color','black')
+                    })
+                }
+
+                function mostrarCor2(){
+                    $('#verde').css('color','pink')
+                    $('#verde').css('background-color','green')
+                    $('#verde').on('mouseout',function(){
+                        $('#verde').css('color','back')
+                        $('#verde').css('background-color','blueviolet')
+                    })
+                }
+
+                function mostrarCor3(){
+                    $('#rosa').css('color','green')
+                    $('#rosa').css('background-color','pink')
+                    $('#rosa').on('mouseout',function(){
+                        $('#rosa').css('color','black')
+                        $('#rosa').css('background-color','yellow')
+
+                    })
+                }
+
+
+
+
+
+                $('#azul').on('mouseover',mostrarCor)
+                $('#red').on('mouseover',mostrarCor1)
+                $('#verde').on('mouseover',mostrarCor2)
+                $('#rosa').on('mouseover',mostrarCor3)
+            })
+
+
+
+
+
+
+
 					
 		</script>        
     </head>
@@ -13,6 +103,16 @@
     <body>
         <input type="button" id="cursohtml" value="Curso HTML5" />
         <input type="button" id="cursocss" 	value="Curso CSS3" />
+        <input type="button" class="cursophp" value="Curso PHP">
+        <input type="button" id="cursojs" value="Curso JS">
+        <input type="button" id="cursopy" value="Curso de Python">
+        <br>
+        <hr>
+        <input type="button" id="azul" value="Azul">
+        <input type="button" id="red" value="Vermelho">
+        <input type="button" id="verde" value="Verde">
+        <input type="button" id="rosa" value="Rosa">
+        
         
         
     </body>

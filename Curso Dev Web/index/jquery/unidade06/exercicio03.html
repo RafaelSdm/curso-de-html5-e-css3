@@ -5,11 +5,28 @@
         <title>Curso jQuery Fundamental</title>
         
         <style>
-			#janela { border:1px solid #666; width:200px; height:200px; margin-top:10px }
+			#janela {
+                  border:1px solid rgb(206, 181, 181);
+                  width:200px; 
+                  height:200px;
+                  margin-top:10px }
 		</style>
         
-        <script src="jquery-3.2.1.min.js"></script>
+        <script src="jquery1.js"></script>
         <script>
+
+            $(function(e){
+
+               function mudarCor(x){
+                    $corWindow = x.data.cor;
+                    $('#janela').css('background-color',$corWindow)
+                }
+
+
+                $('#botaoazul').on('click', {cor:'blue'},mudarCor)
+                $('#botaovermelho').on('click',{cor:'red'},mudarCor)
+                $('#botaoverde').on('click',{cor:'green'},mudarCor)
+            })
 
 	 	</script>        
     </head>
