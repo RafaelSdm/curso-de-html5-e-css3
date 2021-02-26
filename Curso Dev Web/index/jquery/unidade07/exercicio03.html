@@ -8,21 +8,29 @@
 			input[type="button"] { margin-bottom:20px }
 		</style>
         
-        <script src="jquery-3.2.1.min.js"></script>
+        <script src="jquery1.js"></script>
         <script>
-			$( function(e) {			
-				$('#mostrar').click( mostrarObjeto )
-				$('#esconder').click( esconderObjeto )
-				$('#reverso').click( reverterObjeto )
-			})
+			
+			function reverterObjeto(){
+				$('#janela').slideToggle(700)
+				
+			}
 			
 			function esconderObjeto() {
+				$('#janela').slideUp(500)
 			
 			}
 
 			function mostrarObjeto() {
+				$('#janela').slideDown(800)
 			
 			}
+
+			$( function(e) {			
+				$('#mostrar').click( mostrarObjeto )
+				$('#esconder').click( esconderObjeto )
+				$('#reverso').on('mouseover',reverterObjeto)
+			})
 
 		
 		</script>        
@@ -31,6 +39,7 @@
     <body>
         <input type="button" id="mostrar" 	value="Mostrar" />
         <input type="button" id="esconder" 	value="Esconder" />
+		<input type="button" id="reverso" value="Reverso">
         
         
         <div id="janela"></div>
