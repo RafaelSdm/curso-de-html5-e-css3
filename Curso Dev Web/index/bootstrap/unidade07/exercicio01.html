@@ -10,16 +10,31 @@
     <body>
         <!-- Digite abaixo seu codigo -->
         <div class="container">
-            <button type="button">Menu Principal</button>
-            <ul">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="info.html">Info</a></li>
-                <li><a href="special-events.html">Special Events</a></li>
-                <li><a href="dvd.html">DVD</a></li>
-                <li><a href="location.htm">Location</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="review.html">Review</a></li>
-            </ul>    
+            <div class="dropdown">
+                <button type="button"
+                        data-toggle="dropdown"
+                        class="btn btn-primary"
+                        id="menu1"
+                        aria-haspopup="true"
+                        aria-expanded="true"
+                
+                
+                >Menu Principal
+                <span class="caret"></span>
+            
+            
+            </button>
+                <ul class="dropdown-menu" aria-labelledby="menu1">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="info.html">Info</a></li>
+                    <li><a href="special-events.html">Special Events</a></li>
+                    <li><a href="dvd.html">DVD</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="location.htm">Location</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="review.html">Review</a></li>
+                </ul>   
+            </div>
         </div>
         <!-- Fim do seu codigo -->
         <script src="../js/jquery.js"></script>
