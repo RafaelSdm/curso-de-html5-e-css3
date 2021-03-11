@@ -3,7 +3,24 @@
         <title>Curso de EcmaScript 6.0</title>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.min.js"></script>
         <script type="text/babel">
-        
+
+            class Poligono{
+                constructor(lados, altura, largura,nome){
+                    this.lados = lados;
+                    this.altura = altura;
+                    this.largura = largura;
+                    this.nome = nome;
+                    
+                }
+
+                escreverCaracteristicas(){
+                    console.log(`eu sou um ${this.nome} tenho${this.lados} e tenho como largura ${this.largura} mais uma altura de ${this.altura}m`)
+                }
+            }
+            
+
+            var pentagono = new Poligono(5,'5cm','5cm','pentagono')
+            pentagono.escreverCaracteristicas();
 
         </script>
     </head>

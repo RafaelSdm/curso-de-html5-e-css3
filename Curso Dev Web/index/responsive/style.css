@@ -1,0 +1,266 @@
+/*
+
+font-family: 'Akaya Telivigala', cursive;  // 
+
+font-family: 'DotGothic16', sans-serif; gamer
+
+font-family: 'Hind', sans-serif; main
+
+
+
+*/
+
+
+body{
+    font-family: 'Hind', sans-serif; 
+    color: rgba(48, 48, 48, 0.974);
+}
+
+h1, h2, h3{
+    margin: 0;
+    font-family: 'Akaya Telivigala', cursive; 
+    font-weight: 700;
+
+
+
+}
+
+
+.botao{
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: chocolate;
+    font-size: .9em;
+    border-radius: 3px;
+}
+
+#nome{
+
+    font-family: 'DotGothic16', sans-serif;
+
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(94, 94, 94);
+}
+
+
+nav >a{
+    text-decoration: none;
+    color: antiquewhite;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+nav ul{
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+
+nav ul li{
+    text-align: center;
+    width: 100%;
+
+
+
+
+}
+
+nav ul li a{
+    display: inline-block;
+    padding: 18px 0;
+    width: 100%;
+    text-decoration: none;
+    color: azure;
+}
+
+header{
+    background-image: url('fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+
+}
+
+header p{
+    margin-bottom: 2em;
+}
+
+#sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px 20px;
+    background-color: brown;
+}
+
+#sobre p{
+    margin-bottom: 2.5em;
+    max-width: 1000px ;
+
+}
+
+#sobre .botao{
+    background-color: aqua;
+    color: yellow;
+}
+
+
+#serv{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+
+
+}
+
+
+#serv div{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 30px;
+
+
+}
+
+
+#port{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+
+}
+
+#port h2{
+    margin-bottom: 20px;
+}
+
+#port img{
+    width: 100%;
+
+}
+
+#contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: blueviolet;
+
+}
+
+
+/*media queries */
+
+@media screen and (min-width:768px){
+    nav{
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+    nav ul{
+        flex-direction: row;
+        width: 70%;
+
+    }
+
+    header{
+        height: 60vh;
+        justify-content: center;
+    }
+
+    #sobre{
+        height: 250px;
+        height: 30vh;
+        justify-content: center;
+        min-height: 250px;
+    }
+
+    #serv{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
+
+    }
+
+    #serv  h2{
+
+        text-align: center;
+        width: 100%;
+
+    }
+
+    #serv div{
+        flex-grow: 1;
+        flex-basis: 150px;
+        padding: 0 10px;
+
+    }
+
+
+    #port {
+        flex-direction: row;
+        flex-wrap: wrap;
+    
+    }
+
+    #port h2{
+        width: 100%;
+        text-align: center;
+    }
+
+    #port img {
+    
+        width: 33.333%;
+        display: inline-block;
+    }
+
+    #contato{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    #contato h2, #contato p{
+        width: 100%;
+    }
+
+
+
+}

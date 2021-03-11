@@ -5,6 +5,32 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser-polyfill.js"></script>
 
         <script type="text/babel">
+
+            
+            function* gen(){
+                yield 1;
+                yield 2;
+                yield 3;
+            }
+
+            function* idCriador(){
+                var i =0;
+                while(true){
+                    yield i ++;
+                }
+            }
+
+            var g = gen();
+            var r = idCriador();
+
+            console.log(g.next());
+            console.log(g.next());
+            console.log(g.next());
+            console.log(g.next());
+
+            console.log(r.next().value)
+            console.log(r.next().value)
+            console.log(r.next().value)
         
 
 
