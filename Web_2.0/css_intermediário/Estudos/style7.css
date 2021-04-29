@@ -1,0 +1,26 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+fieldset{
+    margin-top: 32px;
+    padding: 16px;
+    border: 1px solid rgba(84, 84, 84, 0.453);
+    background-color: rgb(232, 232, 230);
+}
+
+legend{
+    font-weight: bold;
+}
+
+label{
+    display: block;
+    cursor: pointer;
+}
+
+
+input[type='text']{
+    width: 250px;
+    background-color: yellow;
+}
+

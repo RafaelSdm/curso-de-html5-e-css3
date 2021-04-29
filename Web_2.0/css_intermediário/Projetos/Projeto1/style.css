@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(imagens/fundo.png) repeat-x;
+}
+
+#container{
+    width: 750px;
+    margin: 0 auto;
+    
+}
+
+#topo{
+    height: 150px;
+    background: url(imagens/detalhe-topo.png) no-repeat right top;
+    padding-top: 25px;
+    
+}
+
+.logo{
+    width: 152px;
+    
+    height: 66px;
+    background: url(imagens/logo.png) no-repeat center;
+    text-indent: -3000px;
+}
+
+ul{
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   
+
+}
+
+#topo ul{
+    margin-top: 30px;
+    background-color: crimson;
+    float: left;
+}
+
+#topo ul li{
+    float: left;
+}
+
+#topo ul li a{
+    font-size: 16px ;
+    display: block;
+    padding: 10px 18px;
+    line-height: 32px;
+    text-decoration: none;
+    color: white;
+    background: url(imagens/divisor.png) no-repeat left center;
+
+}
+
+#topo ul .primeiro a{
+    background: none;
+}
+
+#topo ul a:hover{
+    color: rgb(114, 19, 38) ;
+}
+
+body.home #navegacao  a#home,
+body.brasil #navegacao a#brasil,
+body.internacional #navegacao a#internacional,
+body.economia #navegacao a#economia,
+body.saude #navegacao a#saude,
+body.ciencia #navegacao a#ciencia,
+body.fotos #navegacao a#fotos
+{
+    color: aliceblue;
+    background-color: rgb(160, 12, 42);
+    cursor: text;
+}
+
+#conteudo{
+    
+    background-color: rgb(218, 218, 221);
+    margin-top: 60px;
+}
+
+#tres-colunas #primario{
+
+    width: 270px;
+    background-color: turquoise;
+    float: left;
+    margin: 0 0 20px 195px;
+
+}
+
+#duas-colunas #primario{
+    width:555px ;
+    float: left;
+    margin: 0 0 20px 195px;
+    background-color: blue;
+}
+
+#uma-coluna #primario{
+    width: 750px ;
+    float: left;
+    background-color: blue;
+    margin: 0 0 20px 0 ;
+}
+
+#secundario{
+    width: 270px;
+    background-color: yellowgreen;
+    float: left;
+    margin: 0 0 20px 15px;
+}
+
+#lateral{
+    width: 180px;
+    background-color: coral;
+    float: left;
+    margin: 0 0 20px -750px ;
+}
+
+#rodape{
+    clear: both;
+    background-color: rgb(50, 56, 143);
+    padding: 20px;
+   
+}
+
+#footer{
+    width: 750px;
+    margin: 0 auto;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.caixa{
+    margin: 10px 0;
+    padding: 5px 0 5px 0;
+    background: rgb(221, 221, 221) url(imagens/fundo-caixa.png);
+}
+
+h2{
+    font-size: 20px;
+    background-color: rgb(106, 106, 187) ;
+    color: white;
+    padding: 5px;
+}
+
+.caixa-conteudo{
+    background-color: white;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+#lateral ul a{
+    font: 0.9em;
+    padding: 3px;
+    display: block;
+    text-decoration: none;
+    color: black;
+    line-height:30px ;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.501);
+}
+
+#lateral ul a:hover{
+    background: rgb(221, 216, 216) url(imagens/marcador.png) no-repeat left center;
+    color: rgb(115, 117, 119);
+    padding-left: 20px;
+}
+
+label{
+    display: block;
+    cursor: pointer;
+
+}
+
+input{
+    padding: 5px;
+    width: 125px;
+    font-size: 0.9em;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+input.submit{
+    width: 80px;
+    color: wheat;
+    background-color: rgb(160, 12, 42);
+    border: 2px solid rgb(255, 0, 0);
+    padding: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left: 30px;
+}
+
+
+
+img.imagem-principal{
+    width: 98%;
+    border: 3px solid rgb(126, 58, 58);
+}
+
+h3{
+    text-transform: uppercase;
+    display: inline;
+    font-size: 0.8em;
+    padding: 3px;
+}
+
+h3.destaque{
+    background-color: crimson;
+    color: aliceblue;
+
+
+}
+
+#lista-noticias li{
+    padding: 2px;
+    border-bottom: 1px solid #ccc;
+    height: 65px;
+}
+
+#lista-noticias li a img{
+    float: left;
+    margin: 5px;
+}
+
+#lista-noticias li a{
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+#lista-noticias li a h3{
+    text-decoration: none;
+    font-size: 0.8em;
+    padding: 0;
+    color: darkcyan;
+}
+
+#lista-noticias li a p{
+    text-decoration: none;
+    font-size: 0.7em;
+    color: black;
+}
+
+#lista-noticias li:hover{
+    background-color: #ccc;
+}

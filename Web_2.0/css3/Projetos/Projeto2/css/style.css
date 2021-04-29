@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    font-size: 1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: azure;
+}
+
+#cabecalho{
+    background-color: #FFEB4D;
+    padding: 15px;
+    text-align: center;
+}
+
+#logo{
+    padding: 10px;
+}
+
+#menu{
+    padding: 20px;
+}
+
+h1{
+    color: #06111C;
+    font-size: 2.5em;
+
+}
+
+.branco{
+    color: #BEC7C7 ;
+}
+
+a:link, a:visited{
+
+    color: #8fa5a5;
+    padding: 8px 12px;
+
+}
+
+a:hover{
+    color: #FFEB4D;
+    background-color: #BEC7C7;
+    border-radius: 5px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+#main{
+
+    padding: 15px;
+    
+    width: 920px;
+    margin: 0 auto;
+}
+
+#conteudo{
+    width: 660px;
+    float: left;
+}
+
+#lateral{
+    width: 240px;
+    float: right;
+}
+
+
+
+#rodape{
+    clear: both;
+    text-align: center;
+    padding: 15px;
+    background-color: turquoise;
+}
+
+.postagem{
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: beige;
+}
+
+h2{
+    color:#BB2020;
+}
+
+.post{
+    color: #121317;
+    font-size: 0.8em;
+    border-bottom: 1px solid rgba(255, 0, 0, 0.323);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+#main a:link{
+    color: #f8db00;
+    background-color: #bb202000;
+    
+
+
+}
+
+#main a:hover{
+    color: #BB2020;
+    text-decoration: underline;
+}
+
+
+.conteudo-lat{
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+h3{
+    color: #805f5f;
+    background-color:#BEC7C7 ;
+    padding: 5px;
+}
+
+.postagem-lateral{
+    font-size: 0.8em;
+    padding: 5px;
+    border-bottom: 1px dotted blue;
+}

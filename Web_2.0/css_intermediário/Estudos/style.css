@@ -1,0 +1,37 @@
+*{
+    border: 1px solid blue;
+    background-color: black;
+    color: tomato;
+}
+
+h1{
+    color: palevioletred;
+}
+
+.verde{
+    color: yellow;
+}
+
+#cabcalho{
+    color: teal;
+}
+
+li>a{
+    color: rebeccapurple;
+   
+    text-decoration: none;
+
+}
+
+p a{
+    color:forestgreen;
+}
+
+
+h1 + p{
+    color: white;
+}
+
+h2 ~p{
+    color: mediumvioletred;
+}

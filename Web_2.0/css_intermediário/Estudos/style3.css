@@ -1,0 +1,52 @@
+/*ul{
+   
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    padding:10px 20px;
+    
+    background: url(img/seta.png) no-repeat left center;
+   
+
+}*/
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li a{
+
+    width: 200px;
+    height: 40px;
+    display: block;
+    
+    color: black;
+    text-decoration: none;
+    text-indent: 50px;
+    line-height: 40px;
+    background: url(img/menu.png);
+
+
+}
+
+li a:hover{
+    background-position: right bottom;
+    color: aliceblue;
+    transition: 1s;
+}
+
+#home #navegacao .home a,
+#contato #navegacao .contato a,
+#sobre #navegacao .sobre a,
+#noticias #navegacao .noticias a{
+
+    background-position: right bottom;
+    color: aliceblue;
+  
+
+}

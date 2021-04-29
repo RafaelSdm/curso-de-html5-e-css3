@@ -1,0 +1,19 @@
+header{
+    border: 1px solid blue;
+    background-color: antiquewhite;
+    padding: 10px;
+}
+
+nav{
+   border: 1px solid red;
+   background: blue;
+   padding: 10px; 
+}
+
+footer{
+    background-color: yellow;
+}
+
+article{
+    background-color: aquamarine;
+}
