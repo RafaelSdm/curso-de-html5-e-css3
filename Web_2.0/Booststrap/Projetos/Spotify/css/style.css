@@ -189,7 +189,11 @@ footer ul li{
 
 
 
-
+.carousel-control-next, .carousel-control-prev{
+    
+    width: 5%;
+    background: #7c26f8;
+}
 
 
 
