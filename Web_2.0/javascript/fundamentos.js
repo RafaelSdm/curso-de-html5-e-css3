@@ -159,6 +159,60 @@ desligar()
 
 
 
+// arrays
+
+let namer1 = "Rafael";
+let namer4 = "josefino";
+
+let namer = ["Rafael", "Souza", "Damasceno"]
+
+let qtd = namer.length
+
+namer.push("Novo item")
+
+delete namer[1]
+
+console.log(namer[0])
+console.log(namer[3])
 
 
 
+// concatenacao e tempalte string
+
+const a = 'Rafael'
+const carrinho = 2
+
+console.log(a + " " + carrinho);
+console.log("Bem vindo " + a)
+
+console.log(`Olha só ${a} voce escolheu o produto do carrinho ${carrinho}`)
+
+
+// while loops
+
+let i =0
+while(i < 10){
+  console.log("executou")
+  i++
+}
+
+// do while
+
+let j =0;
+do{
+
+  
+  console.log(j);
+  j++;
+
+}while(j <=10)
+
+
+// for
+
+console.log("--------------------------------------")
+
+for(let k=0;k<6;k++){
+  console.log(k);
+
+}
