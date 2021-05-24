@@ -216,3 +216,82 @@ for(let k=0;k<6;k++){
   console.log(k);
 
 }
+
+// operadores de atribuição
+
+let sal = 700;
+let bonus = 300;
+//sal = sal + bonus;
+
+sal += bonus
+sal -= bonus
+
+console.log(sal)
+
+//operadores unarios
+
+let nm = 1;
+
+// pre fixado
+
+++nm;
+
+// pos fixado
+
+nm++;
+
+console.log(nm)
+
+// var e let
+
+var variavel = 10 // 
+
+{
+
+  variavel = 1
+  console.log(variavel)
+
+}
+
+console.log(variavel)
+
+let variavel2 = 5 // global
+
+{
+
+  variavel2 = 9
+  console.log(variavel2)
+
+}
+
+console.log(variavel2)
+
+// var = escopo global, funcao
+// let global, escopo de bloco, funcao
+
+
+// funcao anonima e arrow
+
+function soma(a,b){
+  console.log(a+b)
+}
+
+soma(1,2)
+
+const s = function(a,b){
+  console.log(a+b)
+
+
+}
+s(4,5)
+
+
+const som = (a,b) => {
+  console.log(a+b)
+}
+
+som(10,10)
+
+const exibir = n => console.log(n)
+
+exibir('Rafael')
